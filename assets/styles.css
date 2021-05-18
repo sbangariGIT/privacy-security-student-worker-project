@@ -14,3 +14,173 @@
 }
 
 /* Put CSS Styles Here */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.max-width{
+    padding: 0 80px;
+    max-width: 1300px;
+    margin: auto;
+}
+/*Logo Styling*/
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 15px 0;
+    height: 100px;
+    background-color: #252e70;
+}
+.navbar .logo img{
+   width: 400px;
+   padding-left: 100px;
+}
+ /*Nav Icons*/
+.navbar .menu li {
+    list-style: none;
+    display: inline;
+    padding-right: 70px;
+}
+.navbar .menu li a{
+    color: white;
+    margin-left: 25px;
+    font-size: 25px;
+    font-weight: 500;
+    transition: color 0.4s ease;
+}
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home{
+    position: relative;
+    display: flex;
+}
+
+.home .max-width .heading{ 
+    position: fixed;
+    top: 200px;
+    left:220px;
+    font-size: 40px;
+    font-weight: 500;
+    color: #131A1F;
+    text-align: left;
+    line-height: 56px;
+    width: 775px;
+    height: 56px;
+    letter-spacing: 0px;
+}
+
+.home .max-width .sub-heading{ 
+    position: fixed;
+    top: 200px;
+    left:830px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #131A1F;
+    text-align: left;
+    line-height: 56px;
+    width: 775px;
+    height: 56px;
+    letter-spacing: 0px;
+}
+.home .max-width .sub-heading .number{ 
+    position: fixed;
+    top: 200px;
+    left:810px;
+    font-size: 20px;
+    font-weight: 70;
+    color: #131A1F;
+    text-align: left;
+    line-height: 56px;
+    width: 775px;
+    height: 56px;
+    letter-spacing: 0px;
+}
+.home .max-width .new-aliases{ 
+    position: fixed;
+    top: 280px;
+    left:800px;
+    color:white;
+    background-color: rgb(1, 139, 232);
+    text-align: left;
+    line-height: 56px;
+    width: 200px;
+    height: 35px;
+    letter-spacing: 0px;
+    border-radius: 5%;
+}
+
+.home .max-width .new-aliases .button-text{ 
+    position: fixed;
+    top: 270px;
+    left:800px;
+    padding-left: 10px;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.home .max-width .add-heading{ 
+    position: fixed;
+    top: 320px;
+    left:220px;
+    font-size: 20px;
+    color:gray;
+    text-align: left;
+    width: 775px;
+    height: 56px;
+    letter-spacing: 0px;
+}
+.home .max-width .forward-toogle{ 
+    position: fixed;
+    top: 320px;
+    left:800px;
+    font-size: 20px;
+    color:gray;
+    text-align: left;
+    width: 775px;
+    height: 56px;
+    letter-spacing: 0px;
+}
+
+.toggle {
+    position : relative ;
+    display : inline-block;
+    width : 40px;
+    height : 20px;
+    background-color: white;
+    border-radius: 30px;
+    border: 2px solid grey;
+}
+        
+/* After slide changes */
+.toggle:after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: gray;
+    transition:  all 0.5s;
+}      
+/* Checkbox cheked effect */
+.checkbox:checked + .toggle::after {
+    left : 20px; 
+    background-color: white;
+}
+        
+/* Checkbox cheked toggle label bg color */
+.checkbox:checked + .toggle {
+    background-color: rgb(1, 139, 232);
+}
+        
+/* Checkbox vanished */
+.checkbox { 
+    display : none;
+}
